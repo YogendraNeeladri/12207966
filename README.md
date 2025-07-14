@@ -4,7 +4,7 @@ This is a Full Stack URL Shortener application developed for **Afford Medical Te
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 └── frontend/
 ├── src/
 ├── public/
@@ -18,8 +18,8 @@ To verify logs, check the request being sent to:
 http://20.244.56.144/evaluation-service/logs
 If logging fails, check the status code (401 = wrong or expired token)
 
-🌐 Postman Testing
-🚀 API: Create a Short URL
+ Postman Testing
+API: Create a Short URL
 POST http://localhost:5000/shorturls
 
 Body (JSON):
@@ -28,13 +28,13 @@ Body (JSON):
   "customCode": "afford123",           // optional
   "validityInMinutes": 60              // optional, default = 30
 }
-🔁 API: Redirect to Original URL
+ API: Redirect to Original URL
 GET http://localhost:5000/afford123
 
-📊 API: Get Short URL Stats
+ API: Get Short URL Stats
 GET http://localhost:5000/shorturls/afford123
 
-⚛️ Frontend Setup (React + Material UI)
+Frontend Setup (React + Material UI)
 1. Setup Frontend Project
 cd frontend
 npm install
@@ -52,20 +52,16 @@ BASE_URL=http://localhost:5000
 LOGGING_BEARER_TOKEN=your_bearer_token_here
 
 axios.post(`${process.env.REACT_APP_BASE_URL}/shorturls`, { ... });
-🌍 Deployment Notes
+
+ Deployment Notes
 Ensure MongoDB is hosted (e.g., MongoDB Atlas) or use Docker
-
 Replace BASE_URL with production domain
-
 Set LOGGING_BEARER_TOKEN as a secure environment variable
 
 Use tools like Render, Vercel, or Netlify for frontend
-
 Use Railway, Render, or Heroku for backend
 
-✅ Project Completed ✅
 Built by Neeladri Yogendra
 Roll No: 12207966
 Email: yogiyadav1970@gmail.com
-
 Afford Medical Technologies — Campus Hiring Evaluation 2025
